@@ -1,0 +1,33 @@
+{
+  "appId": "com.pip.app",
+  "productName": "PIP",
+  "directories": {
+    "app": ".",
+    "output": "release"
+  },
+  "files": [
+    "dist/**",
+    "electron/**",
+    "package.json",
+    "index.html",
+    "assets/**",
+    "src/**",
+    "metadata.json",
+    "node_modules/**"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "PIP-${version}-setup.exe"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
+}

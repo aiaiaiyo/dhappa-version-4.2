@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DHAPPA V3",
+  "version": "5.0.0",
+  "identifier": "in.dhappa.v3",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:3000",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{ "title": "DHAPPA V3", "width": 1440, "height": 900, "resizable": true }],
+    "security": { "csp": null }
+  }
+}

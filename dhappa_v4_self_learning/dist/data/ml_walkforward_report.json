@@ -1,0 +1,6310 @@
+{
+  "dataset": {
+    "rows": 230,
+    "date_min": "2026-01-01",
+    "date_max": "2026-09-06",
+    "markets": [
+      "Deshawar",
+      "Faridabad",
+      "Gali",
+      "Ghaziabad"
+    ],
+    "missing": {
+      "Deshawar": 9,
+      "Faridabad": 4,
+      "Gali": 5,
+      "Ghaziabad": 4
+    }
+  },
+  "method": "Strict expanding-window candidate ranking. Initial days 30-59 train; thereafter 10-day walk-forward blocks are predicted before the block is learned. Features use only prior draws and known calendar values.",
+  "pooled": {
+    "n": 664,
+    "mean_rank": 50.308734939759034,
+    "top5": {
+      "hits": 32,
+      "rate": 0.04819277108433735,
+      "random_baseline": 0.05,
+      "lift": 0.963855421686747,
+      "p_value": 0.6095441542286788
+    },
+    "top10": {
+      "hits": 63,
+      "rate": 0.09487951807228916,
+      "random_baseline": 0.1,
+      "lift": 0.9487951807228915,
+      "p_value": 0.6884636576214203
+    },
+    "top20": {
+      "hits": 136,
+      "rate": 0.20481927710843373,
+      "random_baseline": 0.2,
+      "lift": 1.0240963855421685,
+      "p_value": 0.3932161234255194
+    },
+    "top36": {
+      "hits": 245,
+      "rate": 0.3689759036144578,
+      "random_baseline": 0.36,
+      "lift": 1.0249330655957163,
+      "p_value": 0.32836646732400226
+    }
+  },
+  "markets": {
+    "Deshawar": {
+      "summary": {
+        "n": 164,
+        "mean_rank": 48.51829268292683,
+        "top5": {
+          "hits": 12,
+          "rate": 0.07317073170731707,
+          "random_baseline": 0.05,
+          "lift": 1.4634146341463412,
+          "p_value": 0.12129847377360395
+        },
+        "top10": {
+          "hits": 23,
+          "rate": 0.1402439024390244,
+          "random_baseline": 0.1,
+          "lift": 1.402439024390244,
+          "p_value": 0.0612312838553737
+        },
+        "top20": {
+          "hits": 41,
+          "rate": 0.25,
+          "random_baseline": 0.2,
+          "lift": 1.25,
+          "p_value": 0.06919342054370684
+        },
+        "top36": {
+          "hits": 65,
+          "rate": 0.39634146341463417,
+          "random_baseline": 0.36,
+          "lift": 1.100948509485095,
+          "p_value": 0.18678494784500035
+        },
+        "top_coefficients": [
+          {
+            "feature": "gap",
+            "coefficient": -3.948363933820674
+          },
+          {
+            "feature": "repeat",
+            "coefficient": -2.009202179356008
+          },
+          {
+            "feature": "reverse",
+            "coefficient": -1.709709918489011
+          },
+          {
+            "feature": "double",
+            "coefficient": 1.2228948983379062
+          },
+          {
+            "feature": "tens30",
+            "coefficient": 1.1846359142798313
+          },
+          {
+            "feature": "dom_sin",
+            "coefficient": -1.0956205716967853
+          },
+          {
+            "feature": "tens60",
+            "coefficient": 1.0388172804288636
+          },
+          {
+            "feature": "same_tens",
+            "coefficient": -0.7480971624822788
+          }
+        ]
+      },
+      "steps": [
+        {
+          "date": "2026-03-03",
+          "actual": 49,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-04",
+          "actual": 19,
+          "rank": 92,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-05",
+          "actual": 54,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-06",
+          "actual": 36,
+          "rank": 33,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-07",
+          "actual": 38,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-08",
+          "actual": 45,
+          "rank": 85,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-09",
+          "actual": 65,
+          "rank": 42,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-10",
+          "actual": 49,
+          "rank": 8,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-11",
+          "actual": 9,
+          "rank": 92,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-12",
+          "actual": 25,
+          "rank": 78,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-13",
+          "actual": 3,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-14",
+          "actual": 95,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-15",
+          "actual": 39,
+          "rank": 70,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-16",
+          "actual": 28,
+          "rank": 24,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-17",
+          "actual": 47,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-18",
+          "actual": 82,
+          "rank": 44,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-19",
+          "actual": 50,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-20",
+          "actual": 12,
+          "rank": 68,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-21",
+          "actual": 16,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-22",
+          "actual": 70,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-23",
+          "actual": 27,
+          "rank": 21,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-24",
+          "actual": 66,
+          "rank": 31,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-25",
+          "actual": 13,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-26",
+          "actual": 92,
+          "rank": 48,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-27",
+          "actual": 26,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-28",
+          "actual": 40,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-29",
+          "actual": 93,
+          "rank": 47,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-30",
+          "actual": 23,
+          "rank": 94,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-02",
+          "actual": 81,
+          "rank": 32,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-03",
+          "actual": 41,
+          "rank": 91,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-04",
+          "actual": 97,
+          "rank": 35,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-05",
+          "actual": 71,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-06",
+          "actual": 47,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-07",
+          "actual": 44,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-08",
+          "actual": 5,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-09",
+          "actual": 67,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-10",
+          "actual": 85,
+          "rank": 91,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-11",
+          "actual": 85,
+          "rank": 53,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-12",
+          "actual": 92,
+          "rank": 15,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-13",
+          "actual": 82,
+          "rank": 29,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-14",
+          "actual": 0,
+          "rank": 37,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-15",
+          "actual": 49,
+          "rank": 25,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-16",
+          "actual": 93,
+          "rank": 13,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-17",
+          "actual": 99,
+          "rank": 44,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-18",
+          "actual": 15,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-19",
+          "actual": 93,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-20",
+          "actual": 87,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-21",
+          "actual": 41,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-22",
+          "actual": 62,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-23",
+          "actual": 44,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-24",
+          "actual": 79,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-25",
+          "actual": 11,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-26",
+          "actual": 88,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-27",
+          "actual": 15,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-28",
+          "actual": 44,
+          "rank": 2,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-29",
+          "actual": 56,
+          "rank": 75,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-30",
+          "actual": 56,
+          "rank": 44,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-02",
+          "actual": 79,
+          "rank": 8,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-03",
+          "actual": 0,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-04",
+          "actual": 27,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-05",
+          "actual": 6,
+          "rank": 78,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-06",
+          "actual": 3,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-07",
+          "actual": 84,
+          "rank": 49,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-08",
+          "actual": 6,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-09",
+          "actual": 19,
+          "rank": 76,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-10",
+          "actual": 62,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-11",
+          "actual": 10,
+          "rank": 48,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-12",
+          "actual": 8,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-13",
+          "actual": 46,
+          "rank": 55,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-14",
+          "actual": 76,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-15",
+          "actual": 74,
+          "rank": 97,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-16",
+          "actual": 73,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-17",
+          "actual": 76,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-18",
+          "actual": 88,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-19",
+          "actual": 39,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-20",
+          "actual": 74,
+          "rank": 6,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-21",
+          "actual": 96,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-22",
+          "actual": 71,
+          "rank": 34,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-23",
+          "actual": 16,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-24",
+          "actual": 97,
+          "rank": 37,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-25",
+          "actual": 73,
+          "rank": 8,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-26",
+          "actual": 9,
+          "rank": 48,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-27",
+          "actual": 83,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-28",
+          "actual": 64,
+          "rank": 88,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-29",
+          "actual": 53,
+          "rank": 85,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-30",
+          "actual": 71,
+          "rank": 6,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-02",
+          "actual": 11,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-03",
+          "actual": 48,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-04",
+          "actual": 47,
+          "rank": 90,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-05",
+          "actual": 78,
+          "rank": 45,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-06",
+          "actual": 10,
+          "rank": 17,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-07",
+          "actual": 28,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-08",
+          "actual": 62,
+          "rank": 22,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-09",
+          "actual": 26,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-10",
+          "actual": 65,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-11",
+          "actual": 31,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-12",
+          "actual": 52,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-13",
+          "actual": 71,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-14",
+          "actual": 40,
+          "rank": 54,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-02",
+          "actual": 24,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-03",
+          "actual": 39,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-04",
+          "actual": 91,
+          "rank": 59,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-05",
+          "actual": 23,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-06",
+          "actual": 6,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-07",
+          "actual": 19,
+          "rank": 35,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-08",
+          "actual": 53,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-09",
+          "actual": 2,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-10",
+          "actual": 26,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-11",
+          "actual": 53,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-12",
+          "actual": 26,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-13",
+          "actual": 66,
+          "rank": 42,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-14",
+          "actual": 73,
+          "rank": 25,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-15",
+          "actual": 16,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-16",
+          "actual": 28,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-17",
+          "actual": 32,
+          "rank": 87,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-18",
+          "actual": 85,
+          "rank": 61,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-19",
+          "actual": 16,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-20",
+          "actual": 83,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-21",
+          "actual": 73,
+          "rank": 13,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-22",
+          "actual": 5,
+          "rank": 53,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-23",
+          "actual": 20,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-24",
+          "actual": 69,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-25",
+          "actual": 89,
+          "rank": 94,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-26",
+          "actual": 65,
+          "rank": 25,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-27",
+          "actual": 6,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-28",
+          "actual": 75,
+          "rank": 42,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-29",
+          "actual": 16,
+          "rank": 7,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-30",
+          "actual": 67,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-31",
+          "actual": 5,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-02",
+          "actual": 31,
+          "rank": 29,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-03",
+          "actual": 74,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-04",
+          "actual": 31,
+          "rank": 2,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-05",
+          "actual": 93,
+          "rank": 75,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-06",
+          "actual": 51,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-07",
+          "actual": 83,
+          "rank": 15,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-08",
+          "actual": 96,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-09",
+          "actual": 16,
+          "rank": 11,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-10",
+          "actual": 64,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-11",
+          "actual": 88,
+          "rank": 32,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-12",
+          "actual": 19,
+          "rank": 23,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-13",
+          "actual": 79,
+          "rank": 90,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-14",
+          "actual": 12,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-15",
+          "actual": 49,
+          "rank": 89,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-16",
+          "actual": 57,
+          "rank": 84,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-17",
+          "actual": 40,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-18",
+          "actual": 29,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-19",
+          "actual": 40,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-20",
+          "actual": 8,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-21",
+          "actual": 18,
+          "rank": 93,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-22",
+          "actual": 8,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-23",
+          "actual": 41,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-24",
+          "actual": 16,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-25",
+          "actual": 36,
+          "rank": 99,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-26",
+          "actual": 80,
+          "rank": 68,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-27",
+          "actual": 99,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-28",
+          "actual": 27,
+          "rank": 59,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-29",
+          "actual": 31,
+          "rank": 22,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-30",
+          "actual": 96,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-30",
+          "actual": 90,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-02",
+          "actual": 69,
+          "rank": 35,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-09-03",
+          "actual": 57,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-09-04",
+          "actual": 95,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-05",
+          "actual": 59,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-06",
+          "actual": 78,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        }
+      ]
+    },
+    "Faridabad": {
+      "summary": {
+        "n": 167,
+        "mean_rank": 52.34131736526946,
+        "top5": {
+          "hits": 7,
+          "rate": 0.041916167664670656,
+          "random_baseline": 0.05,
+          "lift": 0.8383233532934131,
+          "p_value": 0.7341922752229938
+        },
+        "top10": {
+          "hits": 14,
+          "rate": 0.08383233532934131,
+          "random_baseline": 0.1,
+          "lift": 0.8383233532934131,
+          "p_value": 0.7923978123712074
+        },
+        "top20": {
+          "hits": 29,
+          "rate": 0.17365269461077845,
+          "random_baseline": 0.2,
+          "lift": 0.8682634730538922,
+          "p_value": 0.8280071817699979
+        },
+        "top36": {
+          "hits": 61,
+          "rate": 0.3652694610778443,
+          "random_baseline": 0.36,
+          "lift": 1.0146373918829008,
+          "p_value": 0.4725967575713463
+        },
+        "top_coefficients": [
+          {
+            "feature": "same_tens",
+            "coefficient": -5.244833752852815
+          },
+          {
+            "feature": "same_ones",
+            "coefficient": -3.017125504931119
+          },
+          {
+            "feature": "double",
+            "coefficient": -1.9320633957707405
+          },
+          {
+            "feature": "tens30",
+            "coefficient": -1.6566237681445863
+          },
+          {
+            "feature": "tens60",
+            "coefficient": -1.5140248689623985
+          },
+          {
+            "feature": "dist",
+            "coefficient": 1.1756479079227766
+          },
+          {
+            "feature": "gap",
+            "coefficient": 1.1684591160300448
+          },
+          {
+            "feature": "reverse",
+            "coefficient": 1.0316895011878562
+          }
+        ]
+      },
+      "steps": [
+        {
+          "date": "2026-03-03",
+          "actual": 6,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-04",
+          "actual": 66,
+          "rank": 90,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-05",
+          "actual": 7,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-06",
+          "actual": 36,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-07",
+          "actual": 62,
+          "rank": 29,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-08",
+          "actual": 29,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-09",
+          "actual": 46,
+          "rank": 64,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-10",
+          "actual": 79,
+          "rank": 31,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-11",
+          "actual": 28,
+          "rank": 11,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-12",
+          "actual": 90,
+          "rank": 29,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-13",
+          "actual": 49,
+          "rank": 33,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-14",
+          "actual": 82,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-15",
+          "actual": 39,
+          "rank": 61,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-16",
+          "actual": 68,
+          "rank": 22,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-17",
+          "actual": 58,
+          "rank": 84,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-18",
+          "actual": 90,
+          "rank": 64,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-19",
+          "actual": 87,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-20",
+          "actual": 74,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-21",
+          "actual": 49,
+          "rank": 66,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-22",
+          "actual": 40,
+          "rank": 97,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-23",
+          "actual": 59,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-24",
+          "actual": 28,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-25",
+          "actual": 48,
+          "rank": 84,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-26",
+          "actual": 43,
+          "rank": 91,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-27",
+          "actual": 82,
+          "rank": 62,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-28",
+          "actual": 35,
+          "rank": 35,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-29",
+          "actual": 0,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-30",
+          "actual": 84,
+          "rank": 33,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-01",
+          "actual": 35,
+          "rank": 66,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-02",
+          "actual": 33,
+          "rank": 99,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-03",
+          "actual": 99,
+          "rank": 77,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-04",
+          "actual": 59,
+          "rank": 88,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-05",
+          "actual": 29,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-06",
+          "actual": 39,
+          "rank": 88,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-07",
+          "actual": 7,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-08",
+          "actual": 91,
+          "rank": 32,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-09",
+          "actual": 47,
+          "rank": 42,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-10",
+          "actual": 5,
+          "rank": 13,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-11",
+          "actual": 4,
+          "rank": 92,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-12",
+          "actual": 65,
+          "rank": 19,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-13",
+          "actual": 33,
+          "rank": 82,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-14",
+          "actual": 4,
+          "rank": 70,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-15",
+          "actual": 64,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-16",
+          "actual": 3,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-17",
+          "actual": 44,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-18",
+          "actual": 21,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-19",
+          "actual": 60,
+          "rank": 24,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-20",
+          "actual": 64,
+          "rank": 98,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-21",
+          "actual": 4,
+          "rank": 89,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-22",
+          "actual": 60,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-23",
+          "actual": 68,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-24",
+          "actual": 91,
+          "rank": 69,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-25",
+          "actual": 59,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-26",
+          "actual": 31,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-27",
+          "actual": 65,
+          "rank": 69,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-28",
+          "actual": 25,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-29",
+          "actual": 13,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-01",
+          "actual": 63,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-02",
+          "actual": 72,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-03",
+          "actual": 84,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-04",
+          "actual": 8,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-05",
+          "actual": 12,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-06",
+          "actual": 70,
+          "rank": 21,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-07",
+          "actual": 69,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-08",
+          "actual": 48,
+          "rank": 59,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-09",
+          "actual": 86,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-10",
+          "actual": 46,
+          "rank": 87,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-11",
+          "actual": 22,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-12",
+          "actual": 28,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-13",
+          "actual": 1,
+          "rank": 36,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-14",
+          "actual": 5,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-15",
+          "actual": 9,
+          "rank": 93,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-16",
+          "actual": 80,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-17",
+          "actual": 69,
+          "rank": 76,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-18",
+          "actual": 13,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-19",
+          "actual": 49,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-20",
+          "actual": 79,
+          "rank": 82,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-21",
+          "actual": 53,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-22",
+          "actual": 1,
+          "rank": 62,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-23",
+          "actual": 77,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-24",
+          "actual": 21,
+          "rank": 45,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-25",
+          "actual": 54,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-26",
+          "actual": 13,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-27",
+          "actual": 45,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-28",
+          "actual": 25,
+          "rank": 87,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-29",
+          "actual": 76,
+          "rank": 19,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-30",
+          "actual": 43,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-01",
+          "actual": 3,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-02",
+          "actual": 51,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-03",
+          "actual": 65,
+          "rank": 57,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-04",
+          "actual": 4,
+          "rank": 50,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-05",
+          "actual": 72,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-06",
+          "actual": 32,
+          "rank": 82,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-07",
+          "actual": 88,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-08",
+          "actual": 39,
+          "rank": 19,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-09",
+          "actual": 35,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-10",
+          "actual": 85,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-11",
+          "actual": 75,
+          "rank": 84,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-12",
+          "actual": 79,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-13",
+          "actual": 58,
+          "rank": 38,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-14",
+          "actual": 23,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-01",
+          "actual": 97,
+          "rank": 8,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-02",
+          "actual": 69,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-03",
+          "actual": 73,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-04",
+          "actual": 34,
+          "rank": 24,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-05",
+          "actual": 92,
+          "rank": 11,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-06",
+          "actual": 19,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-07",
+          "actual": 4,
+          "rank": 69,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-08",
+          "actual": 41,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-09",
+          "actual": 88,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-10",
+          "actual": 74,
+          "rank": 49,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-11",
+          "actual": 32,
+          "rank": 61,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-12",
+          "actual": 91,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-13",
+          "actual": 5,
+          "rank": 34,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-14",
+          "actual": 93,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-15",
+          "actual": 60,
+          "rank": 31,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-16",
+          "actual": 15,
+          "rank": 2,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-17",
+          "actual": 30,
+          "rank": 45,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-18",
+          "actual": 7,
+          "rank": 34,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-19",
+          "actual": 83,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-20",
+          "actual": 47,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-21",
+          "actual": 6,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-22",
+          "actual": 34,
+          "rank": 70,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-23",
+          "actual": 39,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-24",
+          "actual": 76,
+          "rank": 49,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-25",
+          "actual": 32,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-26",
+          "actual": 22,
+          "rank": 90,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-27",
+          "actual": 74,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-28",
+          "actual": 27,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-29",
+          "actual": 60,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-30",
+          "actual": 40,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-01",
+          "actual": 57,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-02",
+          "actual": 6,
+          "rank": 61,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-03",
+          "actual": 95,
+          "rank": 8,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-04",
+          "actual": 12,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-05",
+          "actual": 57,
+          "rank": 64,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-06",
+          "actual": 22,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-07",
+          "actual": 26,
+          "rank": 93,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-08",
+          "actual": 81,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-09",
+          "actual": 63,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-10",
+          "actual": 58,
+          "rank": 53,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-11",
+          "actual": 58,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-12",
+          "actual": 75,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-13",
+          "actual": 54,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-14",
+          "actual": 49,
+          "rank": 31,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-15",
+          "actual": 58,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-16",
+          "actual": 90,
+          "rank": 17,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-17",
+          "actual": 46,
+          "rank": 23,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-18",
+          "actual": 22,
+          "rank": 84,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-19",
+          "actual": 59,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-20",
+          "actual": 91,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-21",
+          "actual": 34,
+          "rank": 57,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-22",
+          "actual": 41,
+          "rank": 55,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-23",
+          "actual": 88,
+          "rank": 78,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-24",
+          "actual": 77,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-25",
+          "actual": 71,
+          "rank": 92,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-26",
+          "actual": 49,
+          "rank": 69,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-27",
+          "actual": 61,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-28",
+          "actual": 23,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-29",
+          "actual": 62,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-30",
+          "actual": 7,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-09-01",
+          "actual": 45,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-09-02",
+          "actual": 19,
+          "rank": 31,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-09-03",
+          "actual": 8,
+          "rank": 36,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-09-04",
+          "actual": 2,
+          "rank": 93,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-05",
+          "actual": 30,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-06",
+          "actual": 88,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        }
+      ]
+    },
+    "Gali": {
+      "summary": {
+        "n": 166,
+        "mean_rank": 50.644578313253014,
+        "top5": {
+          "hits": 7,
+          "rate": 0.04216867469879518,
+          "random_baseline": 0.05,
+          "lift": 0.8433734939759036,
+          "p_value": 0.7285403194419852
+        },
+        "top10": {
+          "hits": 13,
+          "rate": 0.0783132530120482,
+          "random_baseline": 0.1,
+          "lift": 0.7831325301204819,
+          "p_value": 0.857124200964534
+        },
+        "top20": {
+          "hits": 32,
+          "rate": 0.1927710843373494,
+          "random_baseline": 0.2,
+          "lift": 0.963855421686747,
+          "p_value": 0.6225706921368532
+        },
+        "top36": {
+          "hits": 54,
+          "rate": 0.3253012048192771,
+          "random_baseline": 0.36,
+          "lift": 0.9036144578313253,
+          "p_value": 0.8443516846294045
+        },
+        "top_coefficients": [
+          {
+            "feature": "repeat",
+            "coefficient": 2.6139119777638564
+          },
+          {
+            "feature": "reverse",
+            "coefficient": 2.219803869717382
+          },
+          {
+            "feature": "dist",
+            "coefficient": 2.019261191218991
+          },
+          {
+            "feature": "ones60",
+            "coefficient": 1.8697771503994072
+          },
+          {
+            "feature": "same_ones",
+            "coefficient": -1.493859671818061
+          },
+          {
+            "feature": "double",
+            "coefficient": 0.9133361402816541
+          },
+          {
+            "feature": "gap",
+            "coefficient": 0.6391932459010977
+          },
+          {
+            "feature": "same_tens",
+            "coefficient": 0.42804072873188354
+          }
+        ]
+      },
+      "steps": [
+        {
+          "date": "2026-03-03",
+          "actual": 17,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-04",
+          "actual": 90,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-05",
+          "actual": 74,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-06",
+          "actual": 45,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-07",
+          "actual": 22,
+          "rank": 6,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-08",
+          "actual": 51,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-09",
+          "actual": 99,
+          "rank": 2,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-10",
+          "actual": 64,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-11",
+          "actual": 24,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-12",
+          "actual": 9,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-13",
+          "actual": 20,
+          "rank": 77,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-14",
+          "actual": 74,
+          "rank": 47,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-15",
+          "actual": 82,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-16",
+          "actual": 17,
+          "rank": 35,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-17",
+          "actual": 45,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-18",
+          "actual": 76,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-19",
+          "actual": 43,
+          "rank": 55,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-20",
+          "actual": 85,
+          "rank": 21,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-21",
+          "actual": 1,
+          "rank": 11,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-22",
+          "actual": 70,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-23",
+          "actual": 86,
+          "rank": 68,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-24",
+          "actual": 82,
+          "rank": 82,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-25",
+          "actual": 30,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-26",
+          "actual": 68,
+          "rank": 34,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-27",
+          "actual": 83,
+          "rank": 87,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-28",
+          "actual": 26,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-29",
+          "actual": 21,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-30",
+          "actual": 39,
+          "rank": 68,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-01",
+          "actual": 97,
+          "rank": 13,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-02",
+          "actual": 63,
+          "rank": 62,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-03",
+          "actual": 62,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-04",
+          "actual": 75,
+          "rank": 76,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-05",
+          "actual": 59,
+          "rank": 68,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-06",
+          "actual": 46,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-07",
+          "actual": 1,
+          "rank": 55,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-08",
+          "actual": 42,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-09",
+          "actual": 47,
+          "rank": 45,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-10",
+          "actual": 11,
+          "rank": 4,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-11",
+          "actual": 24,
+          "rank": 89,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-12",
+          "actual": 6,
+          "rank": 34,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-13",
+          "actual": 39,
+          "rank": 84,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-14",
+          "actual": 2,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-15",
+          "actual": 82,
+          "rank": 94,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-16",
+          "actual": 15,
+          "rank": 15,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-17",
+          "actual": 40,
+          "rank": 54,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-18",
+          "actual": 69,
+          "rank": 35,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-19",
+          "actual": 46,
+          "rank": 82,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-20",
+          "actual": 62,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-21",
+          "actual": 25,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-22",
+          "actual": 95,
+          "rank": 85,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-23",
+          "actual": 33,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-24",
+          "actual": 14,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-25",
+          "actual": 38,
+          "rank": 66,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-26",
+          "actual": 9,
+          "rank": 54,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-27",
+          "actual": 19,
+          "rank": 99,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-28",
+          "actual": 8,
+          "rank": 76,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-29",
+          "actual": 85,
+          "rank": 21,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-01",
+          "actual": 54,
+          "rank": 48,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-02",
+          "actual": 42,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-03",
+          "actual": 74,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-04",
+          "actual": 14,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-05",
+          "actual": 87,
+          "rank": 8,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-06",
+          "actual": 38,
+          "rank": 66,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-07",
+          "actual": 33,
+          "rank": 22,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-08",
+          "actual": 97,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-09",
+          "actual": 64,
+          "rank": 56,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-10",
+          "actual": 56,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-11",
+          "actual": 83,
+          "rank": 25,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-12",
+          "actual": 47,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-13",
+          "actual": 58,
+          "rank": 71,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-14",
+          "actual": 58,
+          "rank": 15,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-15",
+          "actual": 35,
+          "rank": 48,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-16",
+          "actual": 72,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-17",
+          "actual": 85,
+          "rank": 86,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-18",
+          "actual": 46,
+          "rank": 57,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-19",
+          "actual": 86,
+          "rank": 94,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-20",
+          "actual": 19,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-21",
+          "actual": 60,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-22",
+          "actual": 43,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-23",
+          "actual": 23,
+          "rank": 97,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-24",
+          "actual": 21,
+          "rank": 62,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-25",
+          "actual": 72,
+          "rank": 49,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-26",
+          "actual": 79,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-27",
+          "actual": 17,
+          "rank": 24,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-28",
+          "actual": 81,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-29",
+          "actual": 6,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-30",
+          "actual": 78,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-01",
+          "actual": 53,
+          "rank": 49,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-02",
+          "actual": 50,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-03",
+          "actual": 2,
+          "rank": 19,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-04",
+          "actual": 16,
+          "rank": 76,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-05",
+          "actual": 16,
+          "rank": 22,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-06",
+          "actual": 55,
+          "rank": 7,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-07",
+          "actual": 78,
+          "rank": 85,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-08",
+          "actual": 66,
+          "rank": 19,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-09",
+          "actual": 0,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-06-10",
+          "actual": 31,
+          "rank": 66,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-11",
+          "actual": 7,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-12",
+          "actual": 59,
+          "rank": 36,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-13",
+          "actual": 10,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-01",
+          "actual": 78,
+          "rank": 45,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-02",
+          "actual": 33,
+          "rank": 6,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-03",
+          "actual": 49,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-04",
+          "actual": 39,
+          "rank": 98,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-05",
+          "actual": 36,
+          "rank": 47,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-06",
+          "actual": 50,
+          "rank": 91,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-07",
+          "actual": 41,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-08",
+          "actual": 21,
+          "rank": 99,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-09",
+          "actual": 75,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-10",
+          "actual": 35,
+          "rank": 97,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-11",
+          "actual": 4,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-12",
+          "actual": 77,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-13",
+          "actual": 45,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-14",
+          "actual": 52,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-15",
+          "actual": 8,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-16",
+          "actual": 90,
+          "rank": 13,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-17",
+          "actual": 14,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-18",
+          "actual": 80,
+          "rank": 19,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-19",
+          "actual": 57,
+          "rank": 54,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-20",
+          "actual": 54,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-21",
+          "actual": 11,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-22",
+          "actual": 40,
+          "rank": 48,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-23",
+          "actual": 43,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-24",
+          "actual": 72,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-25",
+          "actual": 58,
+          "rank": 71,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-26",
+          "actual": 39,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-27",
+          "actual": 72,
+          "rank": 82,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-28",
+          "actual": 2,
+          "rank": 94,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-29",
+          "actual": 16,
+          "rank": 89,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-30",
+          "actual": 86,
+          "rank": 88,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-01",
+          "actual": 92,
+          "rank": 78,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-02",
+          "actual": 31,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-03",
+          "actual": 59,
+          "rank": 36,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-04",
+          "actual": 27,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-05",
+          "actual": 85,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-06",
+          "actual": 80,
+          "rank": 82,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-07",
+          "actual": 35,
+          "rank": 33,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-08",
+          "actual": 93,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-09",
+          "actual": 97,
+          "rank": 69,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-10",
+          "actual": 57,
+          "rank": 99,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-11",
+          "actual": 92,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-12",
+          "actual": 36,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-13",
+          "actual": 61,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-14",
+          "actual": 71,
+          "rank": 98,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-15",
+          "actual": 71,
+          "rank": 11,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-16",
+          "actual": 59,
+          "rank": 92,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-17",
+          "actual": 15,
+          "rank": 21,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-18",
+          "actual": 88,
+          "rank": 2,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-19",
+          "actual": 56,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-20",
+          "actual": 53,
+          "rank": 54,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-21",
+          "actual": 34,
+          "rank": 62,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-22",
+          "actual": 82,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-23",
+          "actual": 83,
+          "rank": 62,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-24",
+          "actual": 75,
+          "rank": 85,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-25",
+          "actual": 89,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-26",
+          "actual": 77,
+          "rank": 38,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-27",
+          "actual": 63,
+          "rank": 68,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-28",
+          "actual": 86,
+          "rank": 78,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-29",
+          "actual": 45,
+          "rank": 48,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-30",
+          "actual": 87,
+          "rank": 21,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-09-01",
+          "actual": 81,
+          "rank": 53,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-02",
+          "actual": 96,
+          "rank": 64,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-03",
+          "actual": 77,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-04",
+          "actual": 26,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-09-05",
+          "actual": 37,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-06",
+          "actual": 94,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        }
+      ]
+    },
+    "Ghaziabad": {
+      "summary": {
+        "n": 167,
+        "mean_rank": 49.70059880239521,
+        "top5": {
+          "hits": 6,
+          "rate": 0.03592814371257485,
+          "random_baseline": 0.05,
+          "lift": 0.7185628742514969,
+          "p_value": 0.8455814410188968
+        },
+        "top10": {
+          "hits": 13,
+          "rate": 0.07784431137724551,
+          "random_baseline": 0.1,
+          "lift": 0.7784431137724551,
+          "p_value": 0.8625881168847498
+        },
+        "top20": {
+          "hits": 34,
+          "rate": 0.20359281437125748,
+          "random_baseline": 0.2,
+          "lift": 1.0179640718562872,
+          "p_value": 0.4845451667863853
+        },
+        "top36": {
+          "hits": 65,
+          "rate": 0.38922155688622756,
+          "random_baseline": 0.36,
+          "lift": 1.0811709913506322,
+          "p_value": 0.23893362723259398
+        },
+        "top_coefficients": [
+          {
+            "feature": "same_tens",
+            "coefficient": -4.114362228487095
+          },
+          {
+            "feature": "repeat",
+            "coefficient": 3.816950653391708
+          },
+          {
+            "feature": "ones60",
+            "coefficient": -2.6672348952046967
+          },
+          {
+            "feature": "gap",
+            "coefficient": -2.2962648014020166
+          },
+          {
+            "feature": "ones30",
+            "coefficient": -2.0762869966606505
+          },
+          {
+            "feature": "tens30",
+            "coefficient": 1.3745198532021183
+          },
+          {
+            "feature": "reverse",
+            "coefficient": 1.2729095284978647
+          },
+          {
+            "feature": "dist",
+            "coefficient": -1.1178208561866518
+          }
+        ]
+      },
+      "steps": [
+        {
+          "date": "2026-03-03",
+          "actual": 13,
+          "rank": 94,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-04",
+          "actual": 65,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-05",
+          "actual": 46,
+          "rank": 25,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-06",
+          "actual": 2,
+          "rank": 64,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-07",
+          "actual": 60,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-08",
+          "actual": 78,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-09",
+          "actual": 26,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-10",
+          "actual": 74,
+          "rank": 81,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-11",
+          "actual": 58,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-12",
+          "actual": 18,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-13",
+          "actual": 72,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-14",
+          "actual": 75,
+          "rank": 98,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-15",
+          "actual": 27,
+          "rank": 68,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-16",
+          "actual": 12,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-17",
+          "actual": 26,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-18",
+          "actual": 76,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-19",
+          "actual": 26,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-20",
+          "actual": 23,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-21",
+          "actual": 17,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-22",
+          "actual": 28,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-23",
+          "actual": 10,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-24",
+          "actual": 75,
+          "rank": 13,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-25",
+          "actual": 70,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-26",
+          "actual": 34,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-03-27",
+          "actual": 43,
+          "rank": 5,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-28",
+          "actual": 5,
+          "rank": 73,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-03-29",
+          "actual": 14,
+          "rank": 19,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-03-30",
+          "actual": 20,
+          "rank": 53,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-01",
+          "actual": 12,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-02",
+          "actual": 78,
+          "rank": 21,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-03",
+          "actual": 0,
+          "rank": 76,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-04",
+          "actual": 77,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-05",
+          "actual": 17,
+          "rank": 16,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-06",
+          "actual": 59,
+          "rank": 32,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-07",
+          "actual": 26,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-08",
+          "actual": 88,
+          "rank": 88,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-09",
+          "actual": 97,
+          "rank": 23,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-10",
+          "actual": 77,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-11",
+          "actual": 53,
+          "rank": 57,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-12",
+          "actual": 52,
+          "rank": 97,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-13",
+          "actual": 14,
+          "rank": 9,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-14",
+          "actual": 73,
+          "rank": 66,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-15",
+          "actual": 19,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-16",
+          "actual": 14,
+          "rank": 92,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-17",
+          "actual": 47,
+          "rank": 70,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-18",
+          "actual": 62,
+          "rank": 57,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-19",
+          "actual": 79,
+          "rank": 45,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-20",
+          "actual": 34,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-04-21",
+          "actual": 8,
+          "rank": 70,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-22",
+          "actual": 21,
+          "rank": 33,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-23",
+          "actual": 51,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-24",
+          "actual": 20,
+          "rank": 24,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-25",
+          "actual": 76,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-04-26",
+          "actual": 35,
+          "rank": 52,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-27",
+          "actual": 54,
+          "rank": 57,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-28",
+          "actual": 3,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-04-29",
+          "actual": 11,
+          "rank": 39,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-01",
+          "actual": 15,
+          "rank": 99,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-02",
+          "actual": 79,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-03",
+          "actual": 93,
+          "rank": 49,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-04",
+          "actual": 78,
+          "rank": 17,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-05",
+          "actual": 15,
+          "rank": 7,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-06",
+          "actual": 92,
+          "rank": 78,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-07",
+          "actual": 47,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-08",
+          "actual": 33,
+          "rank": 76,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-09",
+          "actual": 44,
+          "rank": 71,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-10",
+          "actual": 86,
+          "rank": 71,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-11",
+          "actual": 43,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-12",
+          "actual": 43,
+          "rank": 2,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-13",
+          "actual": 8,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-14",
+          "actual": 27,
+          "rank": 42,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-15",
+          "actual": 17,
+          "rank": 38,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-16",
+          "actual": 6,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-17",
+          "actual": 54,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-18",
+          "actual": 81,
+          "rank": 26,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-19",
+          "actual": 83,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-20",
+          "actual": 10,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-21",
+          "actual": 17,
+          "rank": 92,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-22",
+          "actual": 0,
+          "rank": 32,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-05-23",
+          "actual": 18,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-24",
+          "actual": 88,
+          "rank": 77,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-25",
+          "actual": 86,
+          "rank": 93,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-26",
+          "actual": 8,
+          "rank": 20,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-05-27",
+          "actual": 45,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-28",
+          "actual": 41,
+          "rank": 97,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-29",
+          "actual": 65,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-05-30",
+          "actual": 76,
+          "rank": 23,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-01",
+          "actual": 52,
+          "rank": 38,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-02",
+          "actual": 29,
+          "rank": 50,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-03",
+          "actual": 85,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-04",
+          "actual": 78,
+          "rank": 23,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-05",
+          "actual": 72,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-06",
+          "actual": 66,
+          "rank": 67,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-07",
+          "actual": 32,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-08",
+          "actual": 70,
+          "rank": 58,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-09",
+          "actual": 21,
+          "rank": 40,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-10",
+          "actual": 33,
+          "rank": 31,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-11",
+          "actual": 0,
+          "rank": 25,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-06-12",
+          "actual": 20,
+          "rank": 42,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-13",
+          "actual": 91,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-06-14",
+          "actual": 52,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-01",
+          "actual": 69,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-02",
+          "actual": 11,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-03",
+          "actual": 31,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-04",
+          "actual": 72,
+          "rank": 11,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-05",
+          "actual": 91,
+          "rank": 10,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-06",
+          "actual": 54,
+          "rank": 22,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-07",
+          "actual": 48,
+          "rank": 57,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-08",
+          "actual": 71,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-09",
+          "actual": 29,
+          "rank": 14,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-10",
+          "actual": 42,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-11",
+          "actual": 4,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-12",
+          "actual": 15,
+          "rank": 38,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-13",
+          "actual": 87,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-14",
+          "actual": 75,
+          "rank": 43,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-15",
+          "actual": 77,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-16",
+          "actual": 5,
+          "rank": 87,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-17",
+          "actual": 30,
+          "rank": 51,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-18",
+          "actual": 51,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-19",
+          "actual": 45,
+          "rank": 29,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-20",
+          "actual": 32,
+          "rank": 23,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-07-21",
+          "actual": 82,
+          "rank": 91,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-22",
+          "actual": 9,
+          "rank": 79,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-23",
+          "actual": 54,
+          "rank": 3,
+          "top5": true,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-24",
+          "actual": 73,
+          "rank": 47,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-25",
+          "actual": 70,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-26",
+          "actual": 84,
+          "rank": 54,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-27",
+          "actual": 7,
+          "rank": 83,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-28",
+          "actual": 67,
+          "rank": 87,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-07-29",
+          "actual": 9,
+          "rank": 11,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-07-30",
+          "actual": 52,
+          "rank": 30,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-01",
+          "actual": 23,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-02",
+          "actual": 15,
+          "rank": 18,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-03",
+          "actual": 60,
+          "rank": 34,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-04",
+          "actual": 24,
+          "rank": 34,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-05",
+          "actual": 22,
+          "rank": 100,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-06",
+          "actual": 89,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-07",
+          "actual": 60,
+          "rank": 7,
+          "top5": false,
+          "top10": true,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-08",
+          "actual": 99,
+          "rank": 87,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-09",
+          "actual": 53,
+          "rank": 24,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-10",
+          "actual": 69,
+          "rank": 37,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-11",
+          "actual": 31,
+          "rank": 36,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-12",
+          "actual": 63,
+          "rank": 59,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-13",
+          "actual": 79,
+          "rank": 70,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-14",
+          "actual": 38,
+          "rank": 46,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-15",
+          "actual": 40,
+          "rank": 60,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-16",
+          "actual": 99,
+          "rank": 28,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-17",
+          "actual": 20,
+          "rank": 72,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-18",
+          "actual": 32,
+          "rank": 23,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-19",
+          "actual": 58,
+          "rank": 54,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-20",
+          "actual": 22,
+          "rank": 27,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-21",
+          "actual": 50,
+          "rank": 74,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-22",
+          "actual": 11,
+          "rank": 63,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-23",
+          "actual": 99,
+          "rank": 31,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": true
+        },
+        {
+          "date": "2026-08-24",
+          "actual": 95,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-25",
+          "actual": 53,
+          "rank": 12,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-08-26",
+          "actual": 90,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-27",
+          "actual": 93,
+          "rank": 99,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-28",
+          "actual": 59,
+          "rank": 80,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-29",
+          "actual": 64,
+          "rank": 41,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-08-30",
+          "actual": 21,
+          "rank": 70,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-01",
+          "actual": 86,
+          "rank": 65,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-02",
+          "actual": 85,
+          "rank": 96,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        },
+        {
+          "date": "2026-09-03",
+          "actual": 32,
+          "rank": 17,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-09-04",
+          "actual": 95,
+          "rank": 15,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-09-05",
+          "actual": 68,
+          "rank": 17,
+          "top5": false,
+          "top10": false,
+          "top20": true,
+          "top36": true
+        },
+        {
+          "date": "2026-09-06",
+          "actual": 60,
+          "rank": 95,
+          "top5": false,
+          "top10": false,
+          "top20": false,
+          "top36": false
+        }
+      ]
+    }
+  }
+}
